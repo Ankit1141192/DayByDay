@@ -1,106 +1,97 @@
-# DayByDay
+This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# 📌 Problem Statement
+# Getting Started
 
-## **Daily Task Scheduling & Productivity Tracking Mobile Application**
+> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
-### Overview
+## Step 1: Start Metro
 
-Many students and professionals plan daily study or work routines but fail to follow them consistently due to poor time management, lack of reminders, and no clear visibility of long-term progress.
+First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
-The goal of this project is to develop a **mobile productivity application** that allows users to create time-based daily tasks, receive alarms when it is time to work, track task completion, and analyze consistency over time using visual indicators.
+To start the Metro dev server, run the following command from the root of your React Native project:
 
-The application will be built using **React Native** and **Firebase** and will include a **Pomodoro-based focus system** as an additional productivity feature.
+```sh
+# Using npm
+npm start
 
----
+# OR using Yarn
+yarn start
+```
 
-## 🎯 Objectives
+## Step 2: Build and run your app
 
-* Enable users to plan structured daily routines
-* Notify users when it is time to start a scheduled task
-* Track task completion and skipped days
-* Provide monthly progress and consistency visualization
-* Encourage deep focus using the Pomodoro technique
+With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
 
----
+### Android
 
-## 🧩 Functional Requirements
+```sh
+# Using npm
+npm run android
 
-### 1. Task Management
+# OR using Yarn
+yarn android
+```
 
-* Users can create daily tasks with:
+### iOS
 
-  * Task title
-  * Duration (in hours/minutes)
-  * Start time
-  * Category (optional)
-* Tasks are created on a per-day basis
+For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
 
----
+The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
 
-### 2. Time-Based Alerts
+```sh
+bundle install
+```
 
-* The application must trigger an alarm or notification when a task’s scheduled start time is reached
-* Notifications should work even when the app is in the background
+Then, and every time you update your native dependencies, run:
 
----
+```sh
+bundle exec pod install
+```
 
-### 3. Task Completion Tracking
+For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
 
-* Users can mark tasks as:
+```sh
+# Using npm
+npm run ios
 
-  * Completed
-  * Skipped
-* Completion status must be stored persistently in the database
+# OR using Yarn
+yarn ios
+```
 
----
+If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
 
-### 4. Monthly Progress Visualization
+This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
-* The application must provide a monthly calendar view where:
+## Step 3: Modify your app
 
-  * **Green** indicates days where tasks were completed
-  * **Red** indicates days where tasks were skipped
-* Users should be able to view:
+Now that you have successfully run the app, let's make changes!
 
-  * Number of completed days
-  * Number of skipped days
-  * Total productive hours per month
+Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
 
----
+When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
 
-### 5. Data Persistence (Firebase)
+- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
+- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
 
-* Firebase must be used for:
+## Congratulations! :tada:
 
-  * User authentication
-  * Storing tasks and schedules
-  * Tracking daily completion status
-  * Retrieving historical progress data
+You've successfully run and modified your React Native App. :partying_face:
 
----
+### Now what?
 
-## 🎁 Bonus Feature: Pomodoro Focus Mode
+- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
+- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
 
-* Implement a Pomodoro timer with:
+# Troubleshooting
 
-  * 25-minute focus sessions
-  * 5-minute break sessions
-  * Customizable time intervals
-* Each task can be completed using one or more Pomodoro sessions
-* The app should record:
+If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
-  * Number of Pomodoro sessions per task
-  * Total focus time
+# Learn More
 
----
+To learn more about React Native, take a look at the following resources:
 
-## 🛠️ Technical Stack
-
-* **Frontend:** React Native
-* **Backend & Database:** Firebase (Firestore)
-* **Authentication:** Firebase Authentication
-* **Notifications:** Push Notifications
-* **State Management:** Context API / Redux (optional)
-
----
+- [React Native Website](https://reactnative.dev) - learn more about React Native.
+- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
+- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
+- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
+- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
