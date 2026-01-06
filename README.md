@@ -82,13 +82,3 @@ DayByDay/
 │── package.json
 │── README.md
 
----
-👨‍💻 Author
-
-Ankit Kumar
-
-GitHub: https://github.com/Ankit1141192
-
-LinkedIn: https://www.linkedin.com/in/ankit1141/
-
-Portfolio: https://ankitkumar1141-portfolio.vercel.app/
