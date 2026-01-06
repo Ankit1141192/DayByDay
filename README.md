@@ -1,97 +1,94 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# DayByDay – Goal & Reminder Mobile Application 🚀
 
-# Getting Started
+DayByDay is a productivity-focused **React Native mobile application** that empowers users to set goals, manage tasks, track progress, and receive **exact-time reminders**. Designed for simplicity and consistency, it promotes daily habit formation and task completion.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 📥 Download APK
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+Get the latest release of the app:
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+👉 [Download DayByDay APK](https://drive.google.com/uc?export=download&id=1_ZK3IQMx948r7yOND2C8LghYUHfsT94t)
 
-```sh
-# Using npm
-npm start
+> Compatible with Android devices. For iOS, use a simulator or make builds using your Apple developer credentials.
 
-# OR using Yarn
-yarn start
-```
+---
 
-## Step 2: Build and run your app
+## ✨ Key Features
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+- 🔐 **User Authentication** via Firebase  
+- 🎯 **Goal & Task Management** (Add / Edit / Remove)  
+- ⏰ **Exact-Time Reminders & Push Notifications**  
+- 📅 **Daily Activity Tracking**  
+- 📊 **Progress & Streak Visuals**  
+- ☁️ **Cloud Data Sync with Firebase Realtime Database  
+- 📱 **Cross-Platform Ready (Android Primary)**
 
-### Android
+---
 
-```sh
-# Using npm
-npm run android
+## 🛠️ Technology Stack
 
-# OR using Yarn
-yarn android
-```
+- **Frontend:** React Native  
+- **Language:** JavaScript  
+- **Backend / Services:** Firebase  
+  - Firebase Authentication  
+  - Firebase Realtime Database  
+  - Firebase Cloud Messaging (Push Notifications)  
+- **Local Storage:** AsyncStorage  
+- **Tools:** Expo CLI / React Native CLI, Android Studio, VS Code
 
-### iOS
+---
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+## 📸 Screenshots
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+> *(Add your screenshots to `screenshots/` and update the paths below)*
 
-```sh
-bundle install
-```
+### 🔐 Login Screen
+![WhatsApp Image 2026-01-06 at 13 01 32](https://github.com/user-attachments/assets/f83cb278-7a74-478b-bc1c-b8a400639b58)
 
-Then, and every time you update your native dependencies, run:
 
-```sh
-bundle exec pod install
-```
+### 🏠 Home Screen
+![WhatsApp Image 2026-01-06 at 13 01 32 (1)](https://github.com/user-attachments/assets/61a2f5ae-f85a-4403-ab35-e2cab10a5f72)
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
 
-```sh
-# Using npm
-npm run ios
+### ✅ Tasks Screen
+![WhatsApp Image 2026-01-06 at 13 01 32 (2)](https://github.com/user-attachments/assets/c8ded41d-a920-4387-b3fd-73224be5a312)
 
-# OR using Yarn
-yarn ios
-```
+### 📊 Progress Screen
+![WhatsApp Image 2026-01-06 at 13 01 32 (3)](https://github.com/user-attachments/assets/f4420d78-deb1-44e2-9e7a-50b52ba2d207)
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## 📂 Project Structure
 
-## Step 3: Modify your app
+```text
+DayByDay/
+│── android/
+│── ios/
+│── src/
+│   ├── components/
+│   │   └── ...
+│   ├── screens/
+│   │   ├── LoginScreen.js
+│   │   ├── HomeScreen.js
+│   │   ├── TasksScreen.js
+│   │   ├── ProgressScreen.js
+│   ├── navigation/
+│   ├── services/
+│   │   └── firebaseConfig.js
+│   └── utils/
+│── screenshots/
+│── App.js
+│── package.json
+│── README.md
 
-Now that you have successfully run the app, let's make changes!
+---
+👨‍💻 Author
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+Ankit Kumar
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+GitHub: https://github.com/Ankit1141192
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+LinkedIn: https://www.linkedin.com/in/ankit1141/
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Portfolio: https://ankitkumar1141-portfolio.vercel.app/
